@@ -2,9 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
 
 
-.p2-container {
-    background-color: #FBC80B;
-}
 
 .p2-card-wrapper{
     /* max-width: 1300px; */
@@ -36,19 +33,18 @@
 }
 
 .p2-card-list .p2-card-item .p2-card-link {
-    transition: all 0.3s ease; /* Smooth transition for scale and border color */
+    transition: all 0.3s ease;
 }
 
-/* On hover, change the border color */
 .p2-card-list .p2-card-item .p2-card-link:hover {
     border-color: #5372F0;
-    transform: scale(1.05); /* Scale the card up by 5% when hovered */
+    transform: scale(1.03);
 }
 
-/* When the card is clicked (active), make it bigger */
+
 .p2-card-list .p2-card-item .p2-card-link:active {
-    transform: scale(1.1); /* Scale the card more when clicked (larger than hover) */
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1); /* Optional: Add shadow effect on click */
+    transform: scale(1);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -103,29 +99,100 @@
     background: #2A2E75;
 }
 
-.p2-card-wrapper .swiper-pagination-bullet {
-    height: 13px;
-    width: 13px;
-    opacity: 0.5;
-    background: #2A2E75;
+.active-link {
+    color: #FDC70B;
+    font-weight: bold;
 }
 
-.p2-card-wrapper .swiper-pagination-bullet-active {
-    opacity: 1;
-}
 
-.p2-card-wrapper .swiper-slide-button {
-    color: #2A2E75;
-    margin-top: -35px;
-}
+textarea {
+    resize: vertical;
+  }
 
-/* Hover effect for better visibility */
-.p2-card-wrapper .swiper-button-prev:hover,
-.p2-card-wrapper .swiper-button-next:hover {
-
+  input,
+  textarea {
+    background-color: transparent;
+    border: 1px solid #FBC80B;
     color: white;
+    caret-color: #FBC80B;
+    border-radius: 0;
+  }
+
+  label {
+    color: white;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: gray;
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border: 2px solid #FBC80B !important;
+  }
+
+  .dropdown-container::after {
+    content: "▼";
+    font-size: 14px;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #2A2E75;
+    pointer-events: none;
+  }
+  .marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
 }
 
+.marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee-left 20s linear infinite;
+}
+
+.marquee-content-right {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee-right 20s linear infinite;
+}
+
+.marquee-content:hover,
+.marquee-content-right:hover {
+    animation-play-state: paused;
+}
+
+@keyframes marquee-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes marquee-right {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.review-card {
+    display: inline-block;
+    white-space: normal;
+    margin-right: 2rem;
+    vertical-align: top;
+    font-family: 'Poppins', sans-serif;
+}
 
 @media screen and (max-width: 768px) {
     .p2-card-wrapper {
