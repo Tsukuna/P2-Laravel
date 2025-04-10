@@ -31,7 +31,7 @@
             margin-bottom: 16px;
         }
         strong {
-            color: #3498db;
+            color: #292D74;
         }
         .message-box {
             padding: 15px;

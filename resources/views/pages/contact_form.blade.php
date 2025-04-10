@@ -103,6 +103,9 @@ Contact Us
                 <option value="passport">Passport</option>
                 <option value="hotel_booking">Hotel Booking</option>
                 <option value="flight_booking">Flight Booking</option>
+                <option value="flight_booking">Visa Processing Services</option>
+                <option value="flight_booking">Hospital Connection Service</option>
+                <option value="flight_booking">Transportation Service</option>
               </select>
               @error('service')
               <p class="mt-2 text-sm text-red-400 flex items-center">
@@ -139,7 +142,7 @@ Contact Us
     </section>
 
     <!-- Our Socials -->
-    <div class="relative mt-8 py-8 lg:py-16 px-6 sm:px-8 mx-4 sm:mx-auto max-w-screen-xl">
+    {{-- <div class="relative mt-8 py-8 lg:py-16 px-6 sm:px-8 mx-4 sm:mx-auto max-w-screen-xl">
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         <div class="max-w-sm rounded overflow-hidden shadow-lg relative bg-cover bg-center">
@@ -149,7 +152,7 @@ Contact Us
               <img class="w-16 h-16 object-cover rounded-full aspect-square" src="{{('storage/img/fb_logo.png')}}">
             </div>
             <div class="px-6 py-4">
-              <a href="https://www.facebook.com/share/1GhCjNJn4u/?mibextid=wwXIfr">
+              <a href="#">
                 <p class="text-black-900 flex justify-center font-content">
                  Facebook
                 </p>
@@ -165,7 +168,7 @@ Contact Us
               <img class="w-16 h-16 object-cover rounded-full aspect-square" src="{{('storage/img/gmail_logo.png')}}">
             </div>
             <div class="px-6 py-4">
-              <a href="https://www.facebook.com/share/1GhCjNJn4u/?mibextid=wwXIfr">
+              <a href="#">
                 <p class="text-black-900  flex justify-center font-content">
                     Gmail
                 </p>
@@ -180,7 +183,7 @@ Contact Us
               <img class="w-18 h-18 object-cover rounded-full aspect-square" src="{{('storage/img/linkedin.png')}}">
             </div>
             <div class="px-6 py-4">
-              <a href="https://www.facebook.com/share/1GhCjNJn4u/?mibextid=wwXIfr">
+              <a href="#">
                 <p class="text-black-900 flex justify-center font-content">
                 LinkedIn
                 </p>
@@ -190,7 +193,7 @@ Contact Us
         </div>
       </div>
 
-    </div>
+    </div> --}}
   </div>
 
 @endsection

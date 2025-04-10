@@ -67,19 +67,22 @@ Feedback
 
     <!-- Why Your Feedback Matters Section -->
     <div data-aos="fade-up"
-    data-aos-duration="3000" data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="w-full bg-[var(--primary-color)] py-10 px-5 my-12">
-        <h2 class="mb-8 text-3xl md:text-4xl text-white font-poppins font-bold text-center">Why Your Feedback Matters</h2>
+    data-aos-duration="3000" data-aos-anchor-placement="center-bottom" class="w-full bg-[var(--primary-color)] py-20 px-8 my-5">
+    <h2 class="mb-12 text-4xl md:text-5xl text-white font-poppins font-bold text-center">
+        Why Your Feedback Matters
+    </h2>
 
-        <div class="w-full md:w-3/4 mx-auto text-white text-center">
-            <p class="mb-4 text-lg">
-                Your feedback is extremely valuable to us! By sharing your experience, you help us identify areas where we can improve and provide better services for you.
-                Whether it's a suggestion, a concern, or a compliment, we listen to every piece of feedback to continuously enhance our offerings.
-            </p>
-            <p class="text-lg">
-                Your opinion shapes our future. We're committed to ensuring that every customer experience is exceptional, and your input plays a vital role in this process.
-            </p>
-        </div>
+    <div class="w-full md:w-3/4 mx-auto text-white text-center">
+        <p class="mb-6 text-lg md:text-xl">
+            Your feedback is extremely valuable to us! By sharing your experience, you help us identify areas where we can improve and provide better services for you.
+            Whether it's a suggestion, a concern, or a compliment, we listen to every piece of feedback to continuously enhance our offerings.
+        </p>
+        <p class="text-lg md:text-xl">
+            Your opinion shapes our future. We're committed to ensuring that every customer experience is exceptional, and your input plays a vital role in this process.
+        </p>
     </div>
+</div>
+
 
 
      {{-- <!-- Feedback Title-->
@@ -152,50 +155,50 @@ Feedback
         <!--Feedback 2-->
         <div class="w-[90%] mx-auto my-10 grid grid-cols-1 md:grid-cols-3 gap-6 text-[var(--primary-color)]">
 
-        <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col gap-4">
+            <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col gap-4">
 
-            <div class="flex items-center gap-4">
-                <div>
-                    <p class="font-bold text-lg font-content">John Doe</p>
+                <div class="flex items-center gap-4">
+                    <div>
+                        <p class="font-bold text-lg font-content">U Kyaw Win</p>
+                    </div>
                 </div>
+                <hr class="border-[var(--primary-color)] my-2">
+
+                <!-- Feedback Text -->
+                <p class="text-md text-gray-800 font-content">
+                    "The service was exceptional, and the quality of the product exceeded my expectations. I will definitely be returning for more!"
+                </p>
             </div>
-            <hr class="border-[var(--primary-color)] my-2">
 
-            <!-- Feedback Text -->
-            <p class="text-md text-gray-800 font-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
-                cursus ante dapibus diam.
-            </p>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col gap-4">
-            <div class="flex items-center gap-4">
-                <div>
-                    <p class="font-bold text-lg font-content">Jane Smith</p>
+            <!-- Card 2 -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div>
+                        <p class="font-bold text-lg font-content">U Zaw Win</p>
+                    </div>
                 </div>
-            </div>
-            <hr class="border-[var(--primary-color)] my-2">
+                <hr class="border-[var(--primary-color)] my-2">
 
-            <p class="text-md text-gray-800 font-content">
-                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-            </p>
+                <p class="text-md text-gray-800 font-content">
+                    "Great experience overall. The customer service was very friendly and attentive, and I felt valued throughout my visit."
+                </p>
             </div>
 
             <!-- Card 3 -->
             <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col gap-4">
-            <div class="flex items-center gap-4">
-                <div>
-                    <p class="font-bold text-lg font-content">Alex Johnson</p>
+                <div class="flex items-center gap-4">
+                    <div>
+                        <p class="font-bold text-lg font-content">Daw Khin Hla</p>
+                    </div>
                 </div>
-            </div>
-            <hr class="border-[var(--primary-color)] my-2">
+                <hr class="border-[var(--primary-color)] my-2">
 
-            <p class="text-md text-gray-800 font-content">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-            </p>
+                <p class="text-md text-gray-800 font-content">
+                    "I had a fantastic time here! The ambiance was amazing, and I felt right at home. Highly recommend this place to others!"
+                </p>
             </div>
-            </div>
+        </div>
+
     </div>
 
 @endsection
