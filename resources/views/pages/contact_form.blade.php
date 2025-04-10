@@ -7,7 +7,7 @@ Contact Us
 @section('content')
 
   <!-- Contact form -->
-  <div class="min-h-screen overflow-auto mt-7">
+  <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="min-h-screen overflow-auto mt-7">
     <section class="bg-[var(--primary-color)]">
       <div class="relative  py-8 lg:py-16 px-6 sm:px-8 mx-4 sm:mx-auto max-w-screen-md  shadow-md bg-transparent">
 
@@ -151,12 +151,9 @@ Contact Us
             <div class="px-6 py-4">
               <a href="https://www.facebook.com/share/1GhCjNJn4u/?mibextid=wwXIfr">
                 <p class="text-black-900 flex justify-center font-content">
-                  P2- Prestige Passenger
+                 Facebook
                 </p>
               </a>
-              <p class="text-gray-500 text-md flex justify-center text-center mt-5 font-poppins">
-                Please add your content here. Keep it short and simple. And smile
-              </p>
             </div>
           </div>
         </div>
@@ -170,12 +167,9 @@ Contact Us
             <div class="px-6 py-4">
               <a href="https://www.facebook.com/share/1GhCjNJn4u/?mibextid=wwXIfr">
                 <p class="text-black-900  flex justify-center font-content">
-                  P2- Prestige Passenger
+                    Gmail
                 </p>
               </a>
-              <p class="text-gray-500 text-md flex justify-center text-center mt-5 font-poppins">
-                Please add your content here. Keep it short and simple. And smile
-              </p>
             </div>
           </div>
         </div>
@@ -183,25 +177,20 @@ Contact Us
         <div class="max-w-sm rounded overflow-hidden shadow-lg relative bg-cover bg-center">
           <div class="relative z-10 flex flex-col items-center p-6">
             <div class="flex justify-center">
-              <img class="w-16 h-16 object-cover rounded-full aspect-square" src="/img/FbLogo.png">
+              <img class="w-18 h-18 object-cover rounded-full aspect-square" src="{{('storage/img/linkedin.png')}}">
             </div>
             <div class="px-6 py-4">
               <a href="https://www.facebook.com/share/1GhCjNJn4u/?mibextid=wwXIfr">
                 <p class="text-black-900 flex justify-center font-content">
-                  P2- Prestige Passenger
+                LinkedIn
                 </p>
               </a>
-              <p class="text-gray-500 text-md flex justify-center text-center mt-5 font-poppins">
-                Please add your content here. Keep it short and simple. And smile
-              </p>
             </div>
           </div>
         </div>
       </div>
 
     </div>
-
-
   </div>
 
 @endsection

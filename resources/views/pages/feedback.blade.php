@@ -7,7 +7,7 @@ Feedback
 
 @section('content')
     <!-- Feedback Form Section -->
-    <div class="w-full h-auto flex flex-col items-center pt-10 pb-5 mt-10">
+    <div  data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="w-full h-auto flex flex-col items-center pt-10 pb-5 mt-10">
         <h2 class="mb-8 text-3xl md:text-6xl font-poppins text-[var(--secondary-color)] font-bold">We Value Your Feedback!</h2>
         <form action="{{route('feedback.store')}}" method="POST" class="w-full md:w-1/2 bg-[var(--primary-color)] shadow-lg rounded-none md:rounded-xl p-8 space-y-6 transform hover:scale-105 transition-all duration-300 ease-in-out">
             @csrf
@@ -65,13 +65,30 @@ Feedback
         </form>
     </div>
 
-     <!-- Feedback Title-->
-     <div class="w-full h-auto flex flex-col  items-center pt-10 pb-5 md:pb-0 font-poppins">
+    <!-- Why Your Feedback Matters Section -->
+    <div data-aos="fade-up"
+    data-aos-duration="3000" data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="w-full bg-[var(--primary-color)] py-10 px-5 my-12">
+        <h2 class="mb-8 text-3xl md:text-4xl text-white font-poppins font-bold text-center">Why Your Feedback Matters</h2>
+
+        <div class="w-full md:w-3/4 mx-auto text-white text-center">
+            <p class="mb-4 text-lg">
+                Your feedback is extremely valuable to us! By sharing your experience, you help us identify areas where we can improve and provide better services for you.
+                Whether it's a suggestion, a concern, or a compliment, we listen to every piece of feedback to continuously enhance our offerings.
+            </p>
+            <p class="text-lg">
+                Your opinion shapes our future. We're committed to ensuring that every customer experience is exceptional, and your input plays a vital role in this process.
+            </p>
+        </div>
+    </div>
+
+
+     {{-- <!-- Feedback Title-->
+     <div  data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="w-full h-auto flex flex-col  items-center pt-10 pb-5 md:pb-0 font-poppins">
         <h1 class="mb-2  py-3 text-4xl md:text-6xl text-[var(--secondary-color)] font-bold justify-center"> " What Our Clients</h1>
         <h1 class="mb-8 text-4xl md:text-6xl text-[var(--secondary-color)] font-bold justify-center"> Say About Us "</h1>
     </div>
 
-    <div class="bg-[var(--primary-color)] py-10 px-5 my-5">
+    <div  data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="bg-[var(--primary-color)] py-10 px-5 my-5">
         <!-- Top Marquee (Left Scrolling) -->
         <div class="marquee-container mb-8">
             <div class="marquee-content">
@@ -115,10 +132,73 @@ Feedback
 
             </div>
         </div>
+    </div> --}}
+
+       <!-- Feedback Title-->
+       <div  data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="w-full h-auto flex flex-col  items-center pt-10 pb-5 md:pb-0">
+        <h1 class="mb-2  text-4xl md:text-6xl text-[var(--secondary-color)] font-bold justify-center text-center font-poppins"> " What Our Clients Say About Us "
+        </h1>
     </div>
 
+    <!-- Feedback content-->
+    <div  data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="w-[95%] bg-[var(--primary-color)] rounded-3xl flex flex-col items-center mx-auto h-aauto my-5">
+        <!-- Feedback Title-->
+        <div class="w-full h-auto flex flex-col  items-center pt-10 pb-5 md:pb-0">
+        <h1 class="mb-2  text-3xl md:text-4xl text-[var(--secondary-color)] font-bold font-poppins justify-center"> " Our Customers' voice "
+        </h1>
+        <h6 class="mb-2 text-center text-white font-bold text-xl font-content"> Client Feedback </h6>
+        </div>
 
+        <!--Feedback 2-->
+        <div class="w-[90%] mx-auto my-10 grid grid-cols-1 md:grid-cols-3 gap-6 text-[var(--primary-color)]">
 
+        <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col gap-4">
 
+            <div class="flex items-center gap-4">
+                <div>
+                    <p class="font-bold text-lg font-content">John Doe</p>
+                </div>
+            </div>
+            <hr class="border-[var(--primary-color)] my-2">
+
+            <!-- Feedback Text -->
+            <p class="text-md text-gray-800 font-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
+                cursus ante dapibus diam.
+            </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col gap-4">
+            <div class="flex items-center gap-4">
+                <div>
+                    <p class="font-bold text-lg font-content">Jane Smith</p>
+                </div>
+            </div>
+            <hr class="border-[var(--primary-color)] my-2">
+
+            <p class="text-md text-gray-800 font-content">
+                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col gap-4">
+            <div class="flex items-center gap-4">
+                <div>
+                    <p class="font-bold text-lg font-content">Alex Johnson</p>
+                </div>
+            </div>
+            <hr class="border-[var(--primary-color)] my-2">
+
+            <p class="text-md text-gray-800 font-content">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+            </p>
+            </div>
+            </div>
+    </div>
 
 @endsection
+
+
+

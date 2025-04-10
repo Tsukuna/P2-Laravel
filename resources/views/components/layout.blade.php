@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="{{'storage/img/apple-touch-icon.png'}}"   >
-<link rel="icon" type="image/png" sizes="32x32" href="{{'storage/img/favicon-32x32.png'}}">
-<link rel="icon" type="image/png" sizes="16x16" href="{{'storage/img/favicon-16x16.png'}}">
-<link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{'storage/img/apple-touch-icon.png'}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{'storage/img/favicon-32x32.png'}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{'storage/img/favicon-16x16.png'}}">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     @vite(['resources/css/app.css', 'resources/js/app.js']);
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,10 +24,10 @@
 <nav class="bg-white  fixed w-full z-20 top-0 start-0 border-b border-gray-200 ">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="{{route('home')}}" class="flex items-center justify-center space-x-3 rtl:space-x-reverse">
-        <img src="{{'storage/img/logo.png'}}" width="110px" alt="Flowbite Logo">
+        <img src="{{'storage/img/logo.png'}}" width="130px" alt="Flowbite Logo">
     </a>
     <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-        <a class="px-6 font-buttons py-2 min-w-[120px] text-center text-[var(--secondary-color)] border border-[var(--secondary-color)] rounded hover:bg-[var(--secondary-color)] hover:text-white active:bg-[var(--secondary-color)] focus:outline-none focus:ring"
+        <a class="px-6 font-buttons py-2 min-w-[120px] text-center text-white bg-[var(--secondary-color)] rounded hover:bg-white hover:border hover:border-[var(--secondary-color)] hover:text-[var(--secondary-color)] active:bg-white focus:outline-none focus:ring"
         href="{{route('contact')}}">
         Contact Us
       </a>
@@ -68,7 +69,7 @@
     <div class="mx-auto max-w-screen-xl flex flex-col sm:flex-row justify-between items-center">
         <!-- Logo Section -->
         <div class="flex items-center mb-4 sm:mb-0">
-            <img src="{{'storage/img/logo.png'}}" alt="Prestige Passengers" width="150" />
+            <a href="{{route('home')}}"><img src="{{'storage/img/logo.png'}}" alt="Prestige Passengers" width="150" /></a>
         </div>
 
         <!-- Location, Phone, and Print Icons Section -->
@@ -92,17 +93,17 @@
 
         <!-- Social Media Icons Section -->
         <div class="flex items-center space-x-6">
-            <a href="#" class="text-gray-500 hover:text-blue-600">
+            <a href="#" class="text-gray-500 hover:text-[var(--primary-color)]">
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
                 </svg>
             </a>
-            <a href="#" class="text-gray-500 hover:text-blue-400">
+            <a href="#" class="text-gray-500 hover:text-[var(--primary-color)]">
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743A11.65 11.65 0 013 4.792a4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/>
                 </svg>
             </a>
-            <a href="#" class="text-gray-500 hover:text-blue-700">
+            <a href="#" class="text-gray-500 hover:text-[var(--primary-color)]">
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0zM7.06 20.45H3.56V9h3.5v11.45zM5.31 7.76c-1.14 0-2.06-.92-2.06-2.06s.92-2.06 2.06-2.06c1.14 0 2.06.92 2.06 2.06s-.92 2.06-2.06 2.06zM20.45 20.45h-3.5v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3.5V9h3.36v1.57h.05c.47-.89 1.62-1.87 3.33-1.87 3.56 0 4.22 2.34 4.22 5.39v6.36z"/>
                 </svg>
@@ -122,7 +123,13 @@
 
 <script src="styles/layout.js"></script>
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 @yield('javascript')
+
+<script>
+    AOS.init();
+</script>
 
 </body>
 
