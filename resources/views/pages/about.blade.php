@@ -182,7 +182,7 @@ About Us
     </div> --}}
 
 
- 
+
 
 @endsection
 
@@ -190,34 +190,37 @@ About Us
 <script>
     const carousel = document.getElementById("carousel");
     const indicators = document.querySelectorAll(".indicator");
-    const itemCount = indicators.length;
+    let activeIndex = 0;
 
     function getItemWidth() {
-        return carousel.getBoundingClientRect().width;
+        return carousel.clientWidth;
+    }
+
+    function updateCarousel() {
+        const translateX = -activeIndex * getItemWidth();
+        carousel.style.transform = `translateX(${translateX}px)`;
+
+        indicators.forEach((indicator, index) => {
+            if (index === activeIndex) {
+                indicator.classList.remove('w-3', 'bg-gray-400', 'rounded-full');
+                indicator.classList.add('w-6', 'bg-[var(--secondary-color)]', 'rounded-lg');
+            } else {
+                indicator.classList.remove('w-6', 'bg-[var(--secondary-color)]', 'rounded-lg');
+                indicator.classList.add('w-3', 'bg-gray-400', 'rounded-full');
+            }
+        });
     }
 
     indicators.forEach((indicator, index) => {
         indicator.addEventListener("click", () => {
-            const itemWidth = getItemWidth();
-
-            carousel.style.transition = "transform 0.3s ease-in-out";
-            carousel.style.transform = `translateX(-${itemWidth * index}px)`;
-
-            indicators.forEach(i => {
-                i.classList.remove("w-6", "bg-[var(--secondary-color)]", "rounded-lg");
-                i.classList.add("w-3", "bg-gray-400", "rounded-full");
-            });
-
-            indicator.classList.remove("w-3", "bg-gray-400", "rounded-full");
-            indicator.classList.add("w-6", "bg-[var(--secondary-color)]", "rounded-lg");
+            activeIndex = index;
+            updateCarousel();
         });
     });
 
-    window.addEventListener("resize", () => {
-        const activeIndex = [...indicators].findIndex(ind => ind.classList.contains("w-6"));
-        const itemWidth = getItemWidth();
-        carousel.style.transition = "transform 0.3s ease-in-out";
-        carousel.style.transform = `translateX(-${itemWidth * activeIndex}px)`;
-    });
+    // Optional: Handle window resize to maintain correct positioning
+    window.addEventListener('resize', updateCarousel);
+
+    updateCarousel(); // Initial update
 </script>
 @endsection

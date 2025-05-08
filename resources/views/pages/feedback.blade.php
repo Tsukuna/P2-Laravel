@@ -67,21 +67,21 @@ Feedback
 
     <!-- Why Your Feedback Matters Section -->
     <div data-aos="fade-up"
-    data-aos-duration="3000" data-aos-anchor-placement="center-bottom" class="w-full bg-[var(--primary-color)] py-20 px-8 my-5">
-    <h2 class="mb-12 text-4xl md:text-5xl text-white font-poppins font-bold text-center">
-        Why Your Feedback Matters
-    </h2>
+        data-aos-duration="3000" data-aos-anchor-placement="center-bottom" class="w-full bg-[var(--primary-color)] py-20 px-8 my-5">
+        <h2 class="mb-12 text-4xl md:text-5xl text-white font-poppins font-bold text-center">
+            Why Your Feedback Matters
+        </h2>
 
-    <div class="w-full md:w-3/4 mx-auto text-white text-center">
-        <p class="mb-6 text-lg md:text-xl">
-            Your feedback is extremely valuable to us! By sharing your experience, you help us identify areas where we can improve and provide better services for you.
-            Whether it's a suggestion, a concern, or a compliment, we listen to every piece of feedback to continuously enhance our offerings.
-        </p>
-        <p class="text-lg md:text-xl">
-            Your opinion shapes our future. We're committed to ensuring that every customer experience is exceptional, and your input plays a vital role in this process.
-        </p>
+        <div class="w-full md:w-3/4 mx-auto text-white text-center">
+            <p class="mb-6 text-lg md:text-xl">
+                Your feedback is extremely valuable to us! By sharing your experience, you help us identify areas where we can improve and provide better services for you.
+                Whether it's a suggestion, a concern, or a compliment, we listen to every piece of feedback to continuously enhance our offerings.
+            </p>
+            <p class="text-lg md:text-xl">
+                Your opinion shapes our future. We're committed to ensuring that every customer experience is exceptional, and your input plays a vital role in this process.
+            </p>
+        </div>
     </div>
-</div>
 
 
 
@@ -138,7 +138,7 @@ Feedback
     </div> --}}
 
        <!-- Feedback Title-->
-       <div  data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="w-full h-auto flex flex-col  items-center pt-10 pb-5 md:pb-0">
+    <div  data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="w-full h-auto flex flex-col  items-center pt-10 pb-5 md:pb-0">
         <h1 class="mb-2  text-4xl md:text-6xl text-[var(--secondary-color)] font-bold justify-center text-center font-poppins"> " What Our Clients Say About Us "
         </h1>
     </div>

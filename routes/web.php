@@ -5,15 +5,15 @@ use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('pages.home');
-});
+// Home page
+Route::get('/',[PageController::class,'home'])->name('home');
 
-Route::get('home',[PageController::class,'home'])->name('home');
+// Static pages
 Route::get('service',[PageController::class,'service'])->name('service');
 Route::get('contact',[PageController::class,'contact'])->name('contact');
-Route::get('about_us',[PageController::class,'about'])->name('about_us');
+Route::get('about-us',[PageController::class,'about'])->name('about-us');
 Route::get('feedback',[PageController::class,'feedback'])->name('feedback');
 
+// Form submissions
 Route::post('contact/store',[ContactController::class,'store'])->name('contact.store');
 Route::post('feedback/store',[FeedbackController::class,'store'])->name('feedback.store');

@@ -27,7 +27,7 @@ Home
             class="bg-[var(--secondary-color)]  text-[var(--primary-color)] py-2 px-6 text-lg transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
             Apply Now
             </a>
-            <a href="{{route('about_us')}}"
+            <a href="{{route('about-us')}}"
             class="bg-[var(--secondary-color)]  text-[var(--primary-color)] py-2 px-6 text-lg transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
             Learn More
             </a>
